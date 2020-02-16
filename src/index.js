@@ -6,8 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import resume from './FTResume.PNG';
 import resumePDF from './Fletcher_Trueblood_Resume.pdf';
 
-var element = React.createElement('img', {className: 'myResume'}, 
-                                 {src: "FTResume.png"});
+var element = React.createElement('h1', { className: 'greeting' }, 'Hello, world!');
 
 function DisplayResume(){
     return(
@@ -17,7 +16,7 @@ function DisplayResume(){
     );
 }
 
-ReactDOM.render(DisplayResume(), document.getElementById('root'));
+ReactDOM.render(element, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
